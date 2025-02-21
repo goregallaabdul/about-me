@@ -8,6 +8,7 @@
 /*navbar*/
 .navbar{
     display: flex;
+    position:fixed;
     justify-content: space-between;
     padding:0.09px;
     margin:5px;
