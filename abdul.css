@@ -386,86 +386,173 @@ margin-top: 10px;
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-    .navbar {
-        padding: 15px 30px;
-    }
-
-    .profile {
-        padding: 100px 30px;
-    }
-
-    .contact form {
-        width: 70%;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        padding: 15px 20px;
+@media screen and (max-width:400px){
+    .navbar{
+        display:flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    .navbar .menu ul {
+        padding: 2px 0;
+    }  
+    .menu ul{
+        display: flex;
         flex-direction: column;
-        gap: 10px;
-    }
-
-    .profile {
-        flex-direction: column;
-        padding: 100px 20px;
-    }
-
-    .profile .side_text h2 {
-        font-size: 40px;
-    }
-
-    .profile .side_text h3 {
-        font-size: 18px;
-    }
-
-    .about_section {
-        flex-direction: column;
-    }
-
-    .contact form {
-        width: 80%;
+        align-items: center;
+        text-align: center;
+        padding: 0.5px 0;
     }
 }
 
-@media (max-width: 480px) {
-    .navbar {
+/*Profile section*/
+@media screen and (max-width:400px){
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+        margin: 20px;
+    }
+    .profile .side_text h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .about_section{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    } 
+    .about_section img {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+}
+.about h2{
+    font-size: 28px;
+    padding: 0 10px;
+}
+.about .educational h3{
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+.about .educational .education .A{
+        display: block;
+        padding: 10px;
+}
+.about .educational .education .B{
+    display: block;
+    padding: 10px;
+}
+.about .educational .education .c{
+    display: block;
+    padding: 10px;
+}
+@media screen and (max-width: 400px) {
+    .skill_section {
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
         padding: 15px;
     }
 
-    .profile .side_text h2 {
-        font-size: 30px;
+    .skill_section h2 {
+        font-size: 28px;
     }
 
-    .profile .side_text h3 {
+    li {
         font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 5px;
     }
 
-    .profile {
-        padding: 80px 15px;
+    .skillbar {
+        height: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .certificate_section {
+        margin: 20px;
+        padding: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 20px;
     }
 
-    .about_section {
-        padding: 30px;
+    .certificate_section h2 {
+        font-size:30px;
+        letter-spacing: 1px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-right: 20%;
     }
 
-    .skill_section {
-        width: 90%;
-        padding: 30px 0;
+    .certificate_section .a1 a:link,
+    .certificate_section .a2 a:link,
+    .certificate_section .a3 a:link,
+    .certificate_section .a4 a:link,
+    .certificate_section .a5 a:link {
+        font-size: 18px;
+        display: block; /* Makes each certificate link take full width */
+        text-align: center;
+        margin: 10px 0;
     }
 
+    .certificate_section .a1,
+    .certificate_section .a2,
+    .certificate_section .a3,
+    .certificate_section .a4,
+    .certificate_section .a5 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
     .contact {
-        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .contact .theory {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contact .theory h4 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .contact .theory .address {
+        padding: 5px;
+    }
+
+    .contact .theory .address p {
+        padding-left: 0;
+        margin-top: 5px;
     }
 
     .contact form {
         width: 90%;
+        align-items: center;
     }
+
+    .contact form input,
+    .contact form textarea {
+        width: 100%;
+    }
+
+    .contact form button {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
 }
