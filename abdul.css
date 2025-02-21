@@ -7,23 +7,13 @@
 
 /*navbar*/
 .navbar{
-     position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            padding: 10px 20px;
-            color: white;
-            text-align: center;
-            font-size: 18px;
-            z-index: 1000
-   /* justify-content: space-between;
+   justify-content: space-between;
     padding:0.09px;
     margin:5px;
     background-color:rgb(14, 14, 14);
     color:rgb(222, 226, 230);
     width:cover;
-    height:1%*/
+    height:1%
 }
 
 .profile {
@@ -35,6 +25,7 @@
     list-style-type: none;
     display: flex;
     gap:20px;
+    color:white;
     padding-right:25px;
     padding-top:35px
 
